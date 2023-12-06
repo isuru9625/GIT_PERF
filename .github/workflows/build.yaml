@@ -21,3 +21,13 @@ jobs:
 
     - name: Push Docker image
       run: docker push isurufernando/flask-api:latest
+      
+    - name: Build MySQL Docker image
+      run: docker build -t isurufernando/mysql-db:latest -f Dockerfile.mysql .
+
+    - name: Log in to Docker Hub for MySQL
+      run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
+
+    - name: Push MySQL Docker image
+      run: docker push isurufernando/mysql-db:latest
+     
