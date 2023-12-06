@@ -89,3 +89,70 @@ Traceback (most recent call last):
 mysql.connector.errors.DatabaseError: 2005 (HY000): Unknown MySQL server host 'mysql' (11001)
 INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 14:23:49] "GET /get_statistics?github_username=lakshanmamalgaha&repository_owner=isuru9625&repository_name=Distributed-Overlay-System-Distributed&access_token=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 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 14:23:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-430-696
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.113:3000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-430-696
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.113:3000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?since=2023-11-22T17%3A42%3A53Z&author=isuru9625 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=isuru9625&page=1 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=isuru9625&page=1 HTTP/1.1" 401 80
+INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 23:12:55] "[35m[1mGET /get_statistics?github_username=isuru9625&repository_owner=isuru9625&repository_name=Distributed-Overlay-System-Distributed&access_token=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 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?since=2023-11-22T17%3A42%3A58Z&author=isuru9625 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=isuru9625&page=1 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=isuru9625&page=1 HTTP/1.1" 401 80
+INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 23:13:01] "[35m[1mGET /get_statistics?github_username=isuru9625&repository_owner=isuru9625&repository_name=Distributed-Overlay-System-Distributed&access_token=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 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?since=2023-11-22T17%3A43%3A38Z&author=isuru9625 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=isuru9625&page=1 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=isuru9625&page=1 HTTP/1.1" 401 80
+INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 23:13:41] "[35m[1mGET /get_statistics?github_username=isuru9625&repository_owner=isuru9625&repository_name=Distributed-Overlay-System-Distributed&access_token=dckr_pat_MEpa7IJOlrw8EAk9YkDTmz4fbF8 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?since=2023-11-22T17%3A44%3A55Z&author=lakshanmamalgaha HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=lakshanmamalgaha&page=1 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=lakshanmamalgaha&page=1 HTTP/1.1" 401 80
+INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 23:14:57] "[35m[1mGET /get_statistics?github_username=lakshanmamalgaha&repository_owner=isuru9625&repository_name=Distributed-Overlay-System-Distributed&access_token=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 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?since=2023-11-22T17%3A46%3A15Z&author=lakshanmamalgaha HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=lakshanmamalgaha&page=1 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=lakshanmamalgaha&page=1 HTTP/1.1" 401 80
+INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 23:16:18] "[35m[1mGET /get_statistics?github_username=lakshanmamalgaha&repository_owner=isuru9625&repository_name=Distributed-Overlay-System-Distributed&access_token=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 HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?since=2023-11-22T17%3A47%3A04Z&author=lakshanmamalgaha HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=lakshanmamalgaha&page=1 HTTP/1.1" 401 80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=lakshanmamalgaha&page=1 HTTP/1.1" 401 80
+INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 23:17:07] "[35m[1mGET /get_statistics?github_username=lakshanmamalgaha&repository_owner=isuru9625&repository_name=Distributed-Overlay-System-Distributed&access_token=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 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-430-696
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.8.113:3000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?since=2023-11-22T17%3A54%3A56Z&author=lakshanmamalgaha HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=lakshanmamalgaha&page=1 HTTP/1.1" 404 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
+DEBUG:urllib3.connectionpool:https://api.github.com:443 "GET /repos/isuru9625/Distributed-Overlay-System-Distributed/commits?author=lakshanmamalgaha&page=1 HTTP/1.1" 404 None
+INFO:werkzeug:127.0.0.1 - - [06/Dec/2023 23:24:59] "[35m[1mGET /get_statistics?github_username=lakshanmamalgaha&repository_owner=isuru9625&repository_name=Distributed-Overlay-System-Distributed&access_token=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 HTTP/1.1[0m" 500 -
