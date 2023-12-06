@@ -145,7 +145,7 @@ def insert_metrics_into_mysql(metrics):
 
         cursor.execute(insert_query, values)
         connection.commit()
-        logging.info("Metrics inserted successfully!")
+        logging.info("Metrics inserted successfully!!")
 
     except Error as e:
         logging.exception("An error occurred: %s", e)
