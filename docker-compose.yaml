@@ -2,24 +2,16 @@ version: '3'
 
 services:
   flask-api:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: isurufernando/flask-api:latest
     ports:
       - "3000:3000"
     depends_on:
       - mysql
-    environment:
-      # Add any environment variables needed for your Flask app
 
   mysql:
-    build:
-      context: .
-      dockerfile: Dockerfile.mysql
+    image: isurufernando/mysql:latest
     ports:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: GIT_PERF
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+    container_name: local-mysql

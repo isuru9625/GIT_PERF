@@ -1,27 +1,23 @@
-name: Build and Push Docker Images
+name: Deploy Docker Compose
 
 on:
   push:
     branches:
-      - main  # Update with your branch name
+      - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Build Docker images
-      run: |
-        docker build -t isurufernando/flask-api:latest .
-        docker build -t isurufernando/mysql:latest -f Dockerfile.mysql .
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
 
-    - name: Log in to Docker Hub
-      run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
+      - name: Pull Docker images
+        run: docker-compose pull
 
-    - name: Push Docker images
-      run: |
-        docker push isurufernando/flask-api:latest
-        docker push isurufernando/mysql:latest
+      - name: Deploy Docker Compose
+        run: docker-compose up -d
