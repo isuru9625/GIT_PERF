@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: Build and Push Docker Images
 
 on:
   push:
@@ -13,21 +13,15 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Build Docker image
-      run: docker build -t isurufernando/flask-api:latest .
+    - name: Build Docker images
+      run: |
+        docker build -t isurufernando/flask-api:latest .
+        docker build -t isurufernando/mysql:latest -f Dockerfile.mysql .
 
     - name: Log in to Docker Hub
       run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
 
-    - name: Push Docker image
-      run: docker push isurufernando/flask-api:latest
-      
-    - name: Build MySQL Docker image
-      run: docker build -t isurufernando/mysql-db:latest -f Dockerfile.mysql .
-
-    - name: Log in to Docker Hub for MySQL
-      run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
-
-    - name: Push MySQL Docker image
-      run: docker push isurufernando/mysql-db:latest
-     
+    - name: Push Docker images
+      run: |
+        docker push isurufernando/flask-api:latest
+        docker push isurufernando/mysql:latest
