@@ -18,8 +18,8 @@ jobs:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
-        docker build -t isurufernando/flask-api:latest -f path/to/your/Dockerfile .
-        docker build -t isurufernando/mysql-db:latest -f path/to/your/MySQLDockerfile .
+        docker build -t isurufernando/flask-api:latest -f Dockerfile .
+        docker build -t isurufernando/mysql-db:latest -f MySQLDockerfile .
         
         echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         
