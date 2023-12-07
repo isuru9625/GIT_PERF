@@ -171,7 +171,7 @@ def get_statistics(github_username, repo_owner, repo_name, access_token = None):
         }
         logging.info("Metrics inserted successfully! ***")
 
-        #insert_metrics_into_mysql(metrics)
+        insert_metrics_into_mysql(metrics)
         return {
             'github_username' : github_username,
             'num_commits_last_two_weeks': num_commits_last_two_weeks,
