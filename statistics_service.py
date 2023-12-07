@@ -116,7 +116,7 @@ def insert_metrics_into_mysql(metrics):
     
     try:
         connection = mysql.connector.connect(
-            host='mysql-container',
+            host='0.0.0.0',
             port= 3306,
             database='GIT_PERF',
             user='root',
