@@ -1,17 +1,22 @@
-version: '3'
+version: '3.8'
 
 services:
   flask-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: isurufernando/flask-api:latest
     ports:
       - "3000:3000"
     depends_on:
-      - mysql
+      - mysql-db
 
-  mysql:
+  mysql-db:
     image: isurufernando/mysql:latest
-    ports:
-      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-    container_name: local-mysql
+      MYSQL_DATABASE: GIT_PERF
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    expose:
+      - "3306"
