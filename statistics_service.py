@@ -115,6 +115,8 @@ def insert_metrics_into_mysql(metrics):
     cursor = None
     
     try:
+        logging.info("host 0.0.0.0 ")
+
         connection = mysql.connector.connect(
             host='0.0.0.0',
             port= 3306,
